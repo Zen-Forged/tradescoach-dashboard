@@ -163,7 +163,7 @@ const weeklyActions = [
 function HSCPLogo({ compact = false }) {
   return (
     <img
-      src="/hscp-logo.png"
+      src="./hscp-logo.png"
       alt="Home Service Coaching Pros"
       style={{
         height: compact ? 44 : 72,
