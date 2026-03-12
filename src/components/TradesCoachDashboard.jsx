@@ -159,40 +159,18 @@ const weeklyActions = [
   { id: 7, priority: "Track",     text: "Alert if close rate drops below 62% midweek" },
 ];
 
-/* ─── HSCP Logo ───────────────────────────────────────────────────────────── */
+/* —— HSCP Logo ——————————————————————————————————————————————————— */
 function HSCPLogo({ compact = false }) {
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: compact ? 8 : 10 }}>
-      <div style={{
-        width: compact ? 34 : 40, height: compact ? 34 : 40,
-        borderRadius: 8,
-        background: `linear-gradient(135deg, ${B.blue} 0%, ${B.blueDark} 100%)`,
-        border: `1.5px solid ${B.cyan}`,
-        display: "flex", alignItems: "center", justifyContent: "center",
-        flexShrink: 0, boxShadow: `0 0 12px rgba(3,255,247,0.25)`,
-      }}>
-        <svg width={compact ? 20 : 24} height={compact ? 20 : 24} viewBox="0 0 24 24" fill="none">
-          <path d="M3 11L12 3L21 11" stroke="white" strokeWidth="1.8" strokeLinejoin="round" fill="none" opacity="0.55"/>
-          <path d="M14.5 9a3.5 3.5 0 0 0-3.36 4.47L7 18a1.4 1.4 0 1 0 2 2l4.15-4.15A3.5 3.5 0 1 0 14.5 9zm0 1.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" fill={B.orange}/>
-        </svg>
-      </div>
-      <div style={{ lineHeight: 1 }}>
-        <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: compact ? 10 : 12, fontWeight: 700,
-          color: B.white, letterSpacing: "0.05em", textTransform: "uppercase", marginBottom: 2 }}>
-          Home Service
-        </div>
-        <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: compact ? 13 : 15, fontWeight: 900,
-          color: B.orange, letterSpacing: "0.03em", textTransform: "uppercase" }}>
-          Coaching Pros
-        </div>
-        {!compact && (
-          <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 7.5, fontWeight: 500,
-            color: B.muted, letterSpacing: "0.08em", textTransform: "uppercase", marginTop: 2 }}>
-            Profit Intelligence
-          </div>
-        )}
-      </div>
-    </div>
+    <img
+      src="/hscp-logo.png"
+      alt="Home Service Coaching Pros"
+      style={{
+        height: compact ? 34 : 56,
+        width: "auto",
+        objectFit: "contain",
+      }}
+    />
   );
 }
 
