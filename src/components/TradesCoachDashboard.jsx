@@ -159,16 +159,17 @@ const weeklyActions = [
   { id: 7, priority: "Track",     text: "Alert if close rate drops below 62% midweek" },
 ];
 
-/* —— HSCP Logo ——————————————————————————————————————————————————— */
+/* ─── HSCP Logo ───────────────────────────────────────────────────────────── */
 function HSCPLogo({ compact = false }) {
   return (
     <img
       src="/hscp-logo.png"
       alt="Home Service Coaching Pros"
       style={{
-        height: compact ? 34 : 56,
+        height: compact ? 44 : 72,
         width: "auto",
         objectFit: "contain",
+        display: "block",
       }}
     />
   );
