@@ -802,7 +802,7 @@ export default function HSCPDashboard() {
                   fontSize: 9, color: B.subtle, fontWeight: 500,
                   letterSpacing: "0.07em", textTransform: "uppercase", lineHeight: 1.8,
                 }}>
-                  Master Your Trade<br/>Scale Your Business · Own Your Future
+                
                 </div>
               </div>
             </div>
