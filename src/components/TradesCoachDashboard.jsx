@@ -789,24 +789,23 @@ export default function HSCPDashboard() {
             </div>
 
             {/* Powered by HSCP */}
-             <div style={{
+            <div style={{
               borderRadius: 12, overflow: "hidden",
               border: 1px solid ${B.blue}30,
               background: linear-gradient(135deg, ${B.black}, #050e1c),
             }}>
               <div style={{ height: 3, background: linear-gradient(90deg, ${B.blue}, ${B.cyan}, ${B.orange}, ${B.blue}) }}/>
-              <div style={{ padding: "16px 14px 14px", textAlign: "center" }}>
+              <div style={{ padding: "16px 14px 14px", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <HSCPLogo />
                 <div style={{
                   marginTop: 12, paddingTop: 10, borderTop: 1px solid ${B.border},
                   fontSize: 9, color: B.subtle, fontWeight: 500,
                   letterSpacing: "0.07em", textTransform: "uppercase", lineHeight: 1.8,
                 }}>
-                
-             
+                  Master Your Trade<br/>Scale Your Business · Own Your Future
+                </div>
               </div>
             </div>
-
           </div>{/* end sidebar */}
         </div>{/* end grid */}
 
