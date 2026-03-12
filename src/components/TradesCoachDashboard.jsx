@@ -513,7 +513,7 @@ export default function TradesCoachDashboard() {
           marginTop: 32, textAlign: "center", fontSize: 11,
           color: "#a8a29e", fontFamily: "'DM Sans', sans-serif",
         }}>
-          TradesCoach.ai · HVAC Intelligence Platform · Week of Jun 9–15, 2025
+          Home Service Coaching Pros · Operational Scorecard · Week of Jun 9–15, 2026
         </footer>
       </main>
     </div>
