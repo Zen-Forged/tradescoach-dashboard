@@ -216,8 +216,8 @@ function ScoreRing({ score, label, sublabel }) {
         }}>{score}</span>
       </div>
       <div style={{ textAlign: "center" }}>
-        <div className="section-label" style={{ color: B.offWhite, fontSize: 9, display: "block" }}>{label}</div>
-        {sublabel && <div style={{ fontSize: 8, color: B.muted, marginTop: 1, fontWeight: 500 }}>{sublabel}</div>}
+        <div className="section-label" style={{ color: B.offWhite, fontSize: 8, display: "block", lineHeight: 1.3 }}>{label}</div>
+        {sublabel && <div style={{ fontSize: 7.5, color: B.muted, marginTop: 1, fontWeight: 500 }}>{sublabel}</div>}
       </div>
     </div>
   );
@@ -531,8 +531,11 @@ export default function HSCPDashboard() {
               Here's exactly what to do this week.
             </p>
 
-            {/* Score rings */}
-            <div style={{ display: "flex", gap: 28, marginBottom: 26, flexWrap: "wrap" }}>
+            {/* Score rings — always 3 columns, never wraps */}
+            <div style={{
+              display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+              gap: 12, marginBottom: 26, maxWidth: 340,
+            }}>
               <ScoreRing score={78} label="Business Health" sublabel="Overall" />
               <ScoreRing score={72} label="Conversion Rate" sublabel="Calls→Jobs" />
               <ScoreRing score={64} label="Team Efficiency" sublabel="Utilization" />
