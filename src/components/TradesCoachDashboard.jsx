@@ -409,7 +409,7 @@ function TechUtilization() {
       <div style={{
         margin: "12px 16px 16px", padding: "12px 14px",
         background: B.orangeFade, border: `1px solid ${B.orange}40`, borderRadius: 10,
-      }}>
+      }}
         <p style={{ fontSize: 12, color: B.offWhite, lineHeight: 1.55, fontWeight: 500 }}>
           💡 <strong style={{ color: B.orange }}>Carlos at 64% + Josh at 75%</strong> = ~$3,200 in recoverable weekly capacity. Fill their open slots with pending estimate follow-ups.
         </p>
